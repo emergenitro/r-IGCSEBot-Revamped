@@ -4,7 +4,9 @@ from pymongo import MongoClient
 import plotly.express as px
 import io
 import pandas as pd
-from app import dbURL
+import os
+
+dbURL = os.getenv("DB")
 
 class Reputation(commands.Cog):
 	def __init__(self, client):

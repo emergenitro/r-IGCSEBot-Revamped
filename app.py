@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 token = os.getenv("TOKEN")
-dbURL = os.getenv("DB")
 
 intents = discord.Intents.all()
 intents.members = True

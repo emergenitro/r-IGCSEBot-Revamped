@@ -1,8 +1,9 @@
 import nextcord as discord
 from nextcord.ext import commands
 from pymongo import MongoClient
-from main import dbURL
+import os
 
+dbURL = os.getenv("DB")
 
 class General(commands.Cog):
 	def __init__(self, client):
