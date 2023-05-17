@@ -8,6 +8,7 @@ dbURL = os.getenv("DB")
 
 
 class General(commands.Cog):
+
     def __init__(self, client):
         self.client = client
         self.db = MongoClient(dbURL).test
