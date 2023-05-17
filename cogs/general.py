@@ -1,7 +1,8 @@
+import os
+
 import nextcord as discord
 from nextcord.ext import commands
 from pymongo import MongoClient
-import os
 
 dbURL = os.getenv("DB")
 

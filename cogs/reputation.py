@@ -1,10 +1,11 @@
+import io
+import os
+
 import nextcord as discord
+import pandas as pd
+import plotly.express as px
 from nextcord.ext import commands
 from pymongo import MongoClient
-import plotly.express as px
-import io
-import pandas as pd
-import os
 
 dbURL = os.getenv("DB")
 
