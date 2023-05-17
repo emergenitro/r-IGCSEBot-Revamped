@@ -31,7 +31,7 @@ if __name__ == "__main__":
         try:
             client.load_extension(f"{module}")
         except Exception as e:
-            print(f'Error loading {module}: {e}')
+            print(f"Error loading {module}: {e}")
 
 
 client.run(token)
