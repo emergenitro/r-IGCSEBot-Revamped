@@ -13,17 +13,18 @@ client = commands.Bot(command_prefix="!", intents=intents)
 
 serverTest = 1065277336548814928
 
+
 @client.event
 async def on_ready():
-	print("Bot is ready")
+    print("Bot is ready")
 
 
 modules = []
 
 for file in os.listdir("./cogs"):
-	if file.endswith(".py"):
-		print(f"Loading {file}")
-		modules.append("cogs." + file[:-3].lower())
+    if file.endswith(".py"):
+        print(f"Loading {file}")
+        modules.append("cogs." + file[:-3].lower())
 
 if __name__ == "__main__":
     for module in modules:
